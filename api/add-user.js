@@ -6,6 +6,11 @@ module.exports = async (req, res) => {
 
   const { name, email } = req.body;
   const uri = process.env.MONGODB_URI;
+
+  if (!uri) {
+    return res.status(500).json({ message: "MongoDB URI not configured" });
+  }
+
   const client = new MongoClient(uri);
 
   try {
