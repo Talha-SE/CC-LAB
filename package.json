@@ -4,7 +4,7 @@
   "description": "Fullstack app with Vercel and MongoDB Atlas",
   "main": "index.js",
   "dependencies": {
-    "mongodb": "^5.0.0"
+    "mongodb": "^6.3.0"
   },
   "scripts": {
     "start": "node index.js"
